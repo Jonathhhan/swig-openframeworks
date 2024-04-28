@@ -231,6 +231,8 @@ template<typename T> class ofBaseImage_ {};
 
 // DIFF: ofVideoBaseTypes.h: ignore all abstract and base types
 
+%ignore ofBaseHasTexturePlanes;
+class ofBaseHasTexturePlanes {};
 %ignore ofBaseVideo;
 %ignore ofBaseVideoDraws;
 %ignore ofBaseVideoGrabber;
