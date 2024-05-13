@@ -18,13 +18,13 @@
 
 // not needed
 
-// ----- ofAppGLFWWindow.h -----
-
-// not needed
-
 // ----- ofAppBaseWindow.h -----
 
-// not needed
+%import "app/ofAppBaseWindow.h"
+
+// ----- ofAppGLFWWindow.h -----
+
+%include "app/ofAppGLFWWindow.h"
 
 // ----- ofAppRunner.h -----
 
