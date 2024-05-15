@@ -22,6 +22,10 @@
 
 // ----- ofAppGLFWWindow.h -----
 
+%ignore setWindowIcon;
+%ignore getX11Window;
+%ignore getGLXContext;
+%ignore getX11XIC;
 %include "app/ofAppGLFWWindow.h"
 
 // ----- ofAppRunner.h -----
