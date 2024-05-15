@@ -8,6 +8,8 @@
 %ignore ofInterpolateCubic;
 %ignore ofInterpolateCatmullRom;
 %ignore ofInterpolateHermite;
+%ignore ofMin;
+%ignore ofMax;
 
 // declare float functions
 ofInterpolateCosine(float y1, float y2, float pct);
