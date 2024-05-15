@@ -3,9 +3,6 @@
 
 // ----- ofWindowSettings.h -----
 
-// DIFF: ofWindowSettings.h:
-// DIFF:   ignoring api-specific window settings classes
-
 %include "app/ofWindowSettings.h"
 
 // ----- ofMainLoop.h -----
