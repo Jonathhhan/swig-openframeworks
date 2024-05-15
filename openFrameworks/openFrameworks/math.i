@@ -36,29 +36,6 @@ ofInterpolateHermite(float y1, float y2, float pct);
 
 // handled in main.i
 
-// ----- ofMatrix3x3.h -----
-
-// DIFF: ofMatrix3x3.h: ignoring glm::mat3 operator
-%ignore ofMatrix3x3::operator glm::mat3;
-
-%include "math/ofMatrix3x3.h"
-
-%extend ofMatrix3x3 {
-
-	glm::mat3 mat3() {
-		return (*$self);
-	}
-
-	const char* __str__() {
-		static char temp[256];
-		std::stringstream str;
-		str << (*self);
-		std::strcpy(temp, str.str().c_str());
-		return &temp[0];
-	}
-
-};
-
 // ----- ofMatrix4x4.h -----
 
 // DIFF: ofMatrix4x4.h: ignoring operator(size_t, size_t) const overload
