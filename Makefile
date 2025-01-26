@@ -88,7 +88,7 @@ DEPRECATED = false
 NAME = ofBindings
 
 # OF libs header path
-OF_HEADERS = -I../../../libs
+OF_HEADERS = -I../../../../../libs
 
 # Python specific preferences
 # typically, long names are used in Python,

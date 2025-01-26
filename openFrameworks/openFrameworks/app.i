@@ -3,11 +3,6 @@
 
 // ----- ofWindowSettings.h -----
 
-// DIFF: ofWindowSettings.h:
-// DIFF:   ignoring api-specific window settings classes
-%ignore ofGLWindowSettings;
-%ignore ofGLESWindowSettings;
-
 %include "app/ofWindowSettings.h"
 
 // ----- ofMainLoop.h -----
@@ -18,13 +13,17 @@
 
 // not needed
 
-// ----- ofAppGLFWWindow.h -----
-
-// not needed
-
 // ----- ofAppBaseWindow.h -----
 
-// not needed
+%import "app/ofAppBaseWindow.h"
+
+// ----- ofAppGLFWWindow.h -----
+
+%ignore setWindowIcon;
+%ignore getX11Window;
+%ignore getGLXContext;
+%ignore getX11XIC;
+%include "app/ofAppGLFWWindow.h"
 
 // ----- ofAppRunner.h -----
 

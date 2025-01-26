@@ -70,7 +70,7 @@ namespace std {
 // include early for glm::vec* declarations,
 // edit: not quite needed for now as this is handled below...
 // ... needed for math constants
-%include "math/ofMathConstants.h"
+%include "custom/ofMathConstants.h"
 
 // ----- ofUtils.h -----
 
@@ -231,6 +231,8 @@ template<typename T> class ofBaseImage_ {};
 
 // DIFF: ofVideoBaseTypes.h: ignore all abstract and base types
 
+%ignore ofBaseHasTexturePlanes;
+class ofBaseHasTexturePlanes {};
 %ignore ofBaseVideo;
 %ignore ofBaseVideoDraws;
 %ignore ofBaseVideoGrabber;
