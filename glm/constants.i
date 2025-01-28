@@ -59,6 +59,7 @@ template<typename T> T golden_ratio();
 %template(zero)              zero<float>;
 %template(one)               one<float>;
 %template(pi)                pi<float>;
+%template(two_pi)            two_pi<float>;
 %template(root_pi)           root_pi<float>;
 %template(half_pi)           half_pi<float>;
 %template(quarter_pi)        quarter_pi<float>;
